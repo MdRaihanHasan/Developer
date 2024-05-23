@@ -27,7 +27,7 @@
         }
     },
     "require": {
-        "piratepixelx/developer": "dev-master"
+        "piratepixelx/developer": "dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
