@@ -1,20 +1,53 @@
 {
-    "name": "piratepixelx/developer",
-    "description": "A simple Developer Page Laravel package",
+    "name": "piratepixelx/developers",
+    "description": "Developer Page",
+    "keywords": [
+        "piratepixelx",
+        "developers"
+    ],
+    "license": "MIT",
     "type": "library",
+    "authors": [
+        {
+            "name": "RHN",
+            "email": "admin@mdraihanhasan.info",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
     "autoload": {
         "psr-4": {
-            "PiratePixelX\\LarapiKit\\": "src/",
+            "Piratepixelx\\Developers\\": "src"
         }
     },
-    "require": {
-        "php": "^7.3|^8.3",
+    "autoload-dev": {
+        "psr-4": {
+            "Piratepixelx\\Developers\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PiratePixelX\\Developer\\DeveloperServiceProvider"
-            ]
+                "Piratepixelx\\Developers\\DevelopersServiceProvider"
+            ],
+            "aliases": {
+                "Developers": "Piratepixelx\\Developers\\DevelopersFacade"
+            }
         }
     }
 }
