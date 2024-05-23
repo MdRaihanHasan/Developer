@@ -6,6 +6,7 @@
         "developers"
     ],
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "RHN",
@@ -13,9 +14,6 @@
             "role": "Developer"
         }
     ],
-    "require": {
-        "php": "^7.4|^8.2"
-    },
     "autoload": {
         "psr-4": {
             "Piratepixelx\\Developer\\": "src/"
@@ -27,5 +25,9 @@
                 "Piratepixelx\\Developer\\Providers\\DeveloperServiceProvider"
             ]
         }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0.1"
     }
 }
