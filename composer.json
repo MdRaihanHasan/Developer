@@ -1,9 +1,9 @@
 {
-    "name": "piratepixelx/developers",
+    "name": "piratepixelx/developer",
     "description": "Developer Page",
     "keywords": [
         "piratepixelx",
-        "developers"
+        "developer"
     ],
     "license": "MIT",
     "type": "library",
@@ -16,13 +16,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Piratepixelx\\Developer\\": "src/"
+            "PiratePixelX\\Developer\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Piratepixelx\\Developer\\Providers\\DeveloperServiceProvider"
+                "PiratePixelX\\Developer\\Providers\\DeveloperServiceProvider"
             ]
         }
     },

@@ -2,8 +2,9 @@
 namespace PiratePixelX\Developer;
 
 use Illuminate\Support\Facades\Route;
-use PiratePixelX\Developer\Controllers\DeveloperPageController;
 
 
 
-Route::get('/developer', [DeveloperPageController::class, 'index']);
+Route::get('/developer', function () {
+    return view('developer::index');
+})->name('developer');
